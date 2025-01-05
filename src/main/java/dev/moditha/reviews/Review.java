@@ -17,5 +17,28 @@ public class Review {
 	@Id
 	private ObjectId id;
 	private String body;
+	
+	//constructor for body
+	public Review(String body) {
+		super();
+		this.body = body;
+	}
+	
+	//getters and setters
+	public ObjectId getId() {
+		return id;
+	}
 
+	public void setId(ObjectId id) {
+		this.id = id;
+	}
+
+	public String getBody() {
+		return body;
+	}
+
+	public void setBody(String body) {
+		this.body = body;
+	}
+	
 }
