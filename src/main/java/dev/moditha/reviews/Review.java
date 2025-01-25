@@ -1,6 +1,5 @@
 package dev.moditha.reviews;
 
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -15,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class Review {
 		
 	@Id
-	private ObjectId id;
+	private String id;
 	private String body;
 	
 	//constructor for body
@@ -25,11 +24,11 @@ public class Review {
 	}
 	
 	//getters and setters
-	public ObjectId getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(ObjectId id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
